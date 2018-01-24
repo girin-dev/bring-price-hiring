@@ -1,0 +1,118 @@
+* {
+    box-sizing:border-box;
+}
+
+/* 버튼 */
+.btn {
+}
+
+.btn-price {
+
+}
+
+/* 체크박스 */
+.chk {
+}
+
+.chk-carrier {
+
+}
+
+/* 화살표 */
+.arrow {
+    display: inline-block-block;
+    background: #385c7b;
+    position: absolute;
+    left: 120px;
+    bottom: 24px;
+}
+
+.arrow:after {
+    content: '';
+    position: absolute; 
+    float:left;
+    width: 0; 
+    height: 0; 
+    border-style: solid;
+}
+
+.arrow-toright {
+    width: 60%;
+    height: 5px;
+}
+.arrow-toright:after {
+    border-color: transparent transparent transparent #385c7b;
+    top: -7px;
+    right: -30px;
+    border-width: 10px 15px;
+}
+
+/* 화살표 점 */
+.dots-list {
+    /* position: absolute;
+    bottom: 15px;
+    left: 300px; */
+
+    width: 100px;
+    margin: 0 auto;
+    margin-top: -35px;
+
+}
+.arrow-dot {
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 18px;
+    position: relative;
+
+    /* display: flex;
+    flex-direction: row; */
+}
+
+/* 티켓 리스트 */
+.tickets {
+
+}
+.ticket {
+    width: 50%;
+    height: 95px;
+    position: relative;
+    border: 1px solid black;
+    margin: 20px 10px;
+}
+.ticket-carrier {
+    width: 50%;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.ticket-price {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.ticket-spec {
+    margin: 40px 10px 10px 10px;
+    position: relative;
+    height: 50%;
+}
+.ticket-spec-origin {
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+.ticket-spec-destination {
+    position: absolute;
+    top: 10px;
+    right: 0;
+}    
+.ticket-spec-duration {
+    text-align: center;
+    padding-bottom: 10px;
+}    
+.ticket-spec-stop {
+    text-align: center;
+}

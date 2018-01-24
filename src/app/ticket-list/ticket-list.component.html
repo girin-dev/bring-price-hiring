@@ -1,3 +1,25 @@
-<p>
-  ticket-list works!
-</p>
+<div class="container">
+    <button class="btn btn-price" (click)="byPriceDesc()">가격순</button>
+    <input type="checkbox" class="chk chk-carrier" (change)="byCarrier()">Air China
+    <section class="tickets">
+        <ul>
+            <li *ngFor="let tk of ticketList">
+                <article class="ticket">
+                    <div class="ticket-carrier">{{ tk.carrier }}</div>
+                    <div class="ticket-price">{{ tk.price | currency: 'KRW' }}</div>
+                    <div class="ticket-spec">
+                        <div class="ticket-spec-origin">{{ tk.origin }}</div>
+                        <div class="ticket-spec-destination">{{ tk.destination }}</div>
+                        <div class="ticket-spec-duration">{{ tk.duration | toHourMin }}</div>
+                        <div class="ticket-spec-stop">{{ tk.stops | numOfStops }}</div>
+                        <span class="arrow arrow-toright"></span>
+                        <ul *ngIf="tk.stops.length" class="dots-list">
+                            <li *ngFor="let num of tk.stops" class="arrow-dot">
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </li>
+        </ul>
+    </section>
+</div>
