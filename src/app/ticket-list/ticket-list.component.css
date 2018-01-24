@@ -2,22 +2,6 @@
     box-sizing:border-box;
 }
 
-/* 버튼 */
-.btn {
-}
-
-.btn-price {
-
-}
-
-/* 체크박스 */
-.chk {
-}
-
-.chk-carrier {
-
-}
-
 /* 화살표 */
 .arrow {
     display: inline-block-block;
@@ -49,10 +33,6 @@
 
 /* 화살표 점 */
 .dots-list {
-    /* position: absolute;
-    bottom: 15px;
-    left: 300px; */
-
     width: 100px;
     margin: 0 auto;
     margin-top: -35px;
@@ -67,15 +47,9 @@
     display: inline-block;
     margin: 0 18px;
     position: relative;
-
-    /* display: flex;
-    flex-direction: row; */
 }
 
 /* 티켓 리스트 */
-.tickets {
-
-}
 .ticket {
     width: 50%;
     height: 95px;
