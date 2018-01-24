@@ -4,7 +4,7 @@
 
 /* 화살표 */
 .arrow {
-    display: inline-block-block;
+    display: inline-block;
     background: #385c7b;
     position: absolute;
     left: 120px;
